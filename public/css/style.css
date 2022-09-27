@@ -20,7 +20,10 @@ p {
 div.top-header {
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: %;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
 }
 
 header div.top-header p {
@@ -31,6 +34,9 @@ header div.top-header p {
 
 header {
     background-color: #EAC926;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 header div.logo,
@@ -192,14 +198,19 @@ article div.main-article {
 
 
 footer div {
-    margin: auto;
-    text-align: center;
+    display: flex;
+}
+
+.footer-element{
+   align-content: center;
+   flex-direction: column;
 }
 
 footer div h4 {
     font-size: 20px;
     color: #666;
     margin: 10px;
+    text-align: center;
 }
 
 footer div h5 {
@@ -208,18 +219,26 @@ footer div h5 {
     margin: 10px;
     text-align: left;
     padding-top: 30px;
+    text-align: center;
 }
 
 footer div p {
     font-size: 12px;
     color: #666;
     padding-inline: 20px;
+    text-align: center;
 }
 
 footer div i {
     font-size: 20px;
-    color: #03264C;
+    color: #3483fa;
     padding-top: 30px;
+    text-align: center;
+   
+}
+
+footer div i:hover {
+    color: #EAC926; 
 }
 
 
@@ -229,10 +248,35 @@ footer div i {
         font-size: 12px;
     }
 
-    header nav {
-        display: block;
-        padding-bottom: 20px;
+    div.top-header {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+        align-items: center;
     }
+
+    header.form, header div.logo, header div.top-header p {
+        width: 40%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    header nav li {
+        padding: 10px;
+    }
+
+    header ul li {
+        list-style-type: none;
+        display: inline;
+    }   
 
     div.burger-menu {
         display: none;
@@ -254,14 +298,36 @@ footer div i {
     .discount {
         width: 50%;
     }
+    footer div {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    
+    .footer-element{
+        padding: 35px 24px 20px;
+        float: left;
+        width: 33.3333333333%;
+        position: relative;
+        text-align: center;
+    }
 
 }
 
 @media (min-width: 769px) {
 
-    div.burger-menu {
-        display: none;
+    header div.top-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+
     }
+
+    header.logo {
+        float:left;
+    }
+
+
 
     main section div.products article {
         width: 22%;

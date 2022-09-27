@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/register.css">
+
     </head>
     <body>
         <header>
@@ -38,17 +40,18 @@
             </div>
         </header>
         <main class="register">
+            <div class="formregister">
             <form action="/register" method="POST">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
+                <input class="camposformregister" type="text" name="name" placeholder="Nombre y apellido" minlength="4">
+                <input class="camposformregister" type="text" name="user" placeholder="Nombre de usuario" minlength="4">
+                <input class="camposformregister" type="email" name="email" placeholder="E-mail">
                 <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
+                <label class="titulosregister" for="birth_date"><b>Fecha de nacimiento</b></label>
                 <br>
-                <input type="date" name="birth_date" id="birth_date">
+                <input class="camposformregister" type="date" name="birth_date" id="birth_date">
                 <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
+                <input class="camposformregister" type="text" name="addres" placeholder="Domicilio">
+                <h4 class="titulosregister">Perfil del usuario</h4>
                 <div class="profile">
                     <input type="radio" name="profile" value="buy" id="buy">
                     <label for="buy">Comprador</label>
@@ -56,7 +59,7 @@
                     <label for="sell">Vendedor</label>
                 </div>
 
-                <h4>Intereses</h4>
+                <h4 class="titulosregister">Intereses</h4>
                 <div class="interests">
                     <div>
                         <input type="checkbox" name="interests" value="a" id="a">
@@ -80,21 +83,40 @@
                     </div>
                 </div>
                 
-                <h4>Elegí tu foto de usuario</h4>
+                <h4 class="titulosregister">Elegí tu foto de usuario</h4>
                 <input type="file" name="avatar">
                 <br>
                 <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <input class="camposformregister" type="password" name="pass" placeholder="Elegí tu contraseña">
+                <input class="camposformregister" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
                 <br>
                 <br>
-                <button type="submit" class="enviar">Registrate</button>
-                <button type="reset" class="borrar">Borrar</button>
+                <button class= "botonregister" type="submit" class="enviar">Registrate</button>
+                <button class= "botonregister" type="reset" class="borrar">Borrar</button>
                 <br>
                 <br>
             </form>
+        </div>
         </main>
         <footer>
-        </footer>
+            <div class="footer">
+                <article>
+                    <i class="fas fa-credit-card"></i>
+                    <h4 class="pie-de-pagina">Pagá con tarjeta o en efectivo</h4>
+                    <p class="parrafo-pie-de-pagina">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
+                    <i class="fas fa-gift"></i>
+                    <h4 class="pie-de-pagina">Envío gratis desde $ 2.500</h4>
+                    <p class="parrafo-pie-de-pagina">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                    <i class="fas fa-user-shield"></i>
+                    <h4 class="pie-de-pagina">Seguridad, de principio a fin</h4>
+                    <p class="parrafo-pie-de-pagina">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                    <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+            </div>
+            </article>
+            </div>
+    </footer>
     </body>
 </html>

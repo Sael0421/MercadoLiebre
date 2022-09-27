@@ -1,3 +1,33 @@
 input:invalid{
     background-color:pink;
 }
+
+.titulosregister{
+    color: black;
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.formregister{
+    display: flex;
+}
+
+input.camposformregister {
+    width: 100%;
+    padding:3px;
+    margin-block: 10px;
+    color:grey;
+    background-color:white;
+    border: none;
+    border-radius: 8px;
+}
+
+button.botonregister{
+    background-color: #3483fa;
+    margin-block: 10px;
+    padding:5px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
